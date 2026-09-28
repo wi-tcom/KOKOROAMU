@@ -18,7 +18,7 @@ AMU Studio は、SAKU で作ったキャラクターに仕事と記憶を与え�
 ## インストールして使う
 
 1. このリポジトリの [Releases](https://github.com/wi-tcom/KOKOROAMU/releases) から、`AMU Studio_0.1.0-beta.3_x64-ai-live-setup.exe` を取得します。
-2. SHA-256 が `77598d3d4a918d9f5c8067fa0613a31ccdb14f8eb14f0676a821ea911c32ddc6`（26,089,507 バイト）と一致することを確かめます。
+2. SHA-256 が `632503245f0f8003bcc16d9cc34d74a07a3d11d89954d6af06b9fb055ae2d4ab`（26,081,539 バイト）と一致することを確かめます。
    `Get-FileHash ".\AMU Studio_0.1.0-beta.3_x64-ai-live-setup.exe" -Algorithm SHA256`
 3. インストールして起動します。インストールはユーザーごとで、管理者の権限は要りません。動く環境は Windows 10／11（x64）です。WebView2 Runtime が無い PC では、インストーラーがインターネットから取得して入れます。SmartScreen の警告が出たら「詳細情報」→「実行」の順に押します。
 4. AI の提供元（Anthropic または OpenAI）の API キーは、ご自分のものを使います。キーは、この PC の資格情報マネージャーに保存されます。

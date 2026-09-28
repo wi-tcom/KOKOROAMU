@@ -20,7 +20,7 @@ This repository is **for distribution only**. It does not contain the app's sour
 ## Install and use
 
 1. Download `AMU Studio_0.1.0-beta.3_x64-ai-live-setup.exe` from the [Releases](https://github.com/wi-tcom/KOKOROAMU/releases) of this repository.
-2. Check that its SHA-256 matches `77598d3d4a918d9f5c8067fa0613a31ccdb14f8eb14f0676a821ea911c32ddc6` (26,089,507 bytes).
+2. Check that its SHA-256 matches `632503245f0f8003bcc16d9cc34d74a07a3d11d89954d6af06b9fb055ae2d4ab` (26,081,539 bytes).
    `Get-FileHash ".\AMU Studio_0.1.0-beta.3_x64-ai-live-setup.exe" -Algorithm SHA256`
 3. Install and start it. It installs per user; administrator rights are not required. If SmartScreen shows a warning, press 「詳細情報」 then 「実行」 ("More info" then "Run anyway" on English Windows).
 4. Use your own API key for the AI provider (Anthropic or OpenAI). The key is stored in Credential Manager on this PC.

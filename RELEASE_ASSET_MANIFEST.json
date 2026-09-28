@@ -6,14 +6,14 @@
     "repository": "wi-tcom/KOKOROAMU-STUDIO",
     "repository_visibility": "private",
     "branch": "claude/release-beta3",
-    "exact_revision": "7cf33ec9752d56940a8780f42ae89022b4c084d7",
-    "tree": "005cb7806cfcc914577399196cc55449e0e07eb6"
+    "exact_revision": "4fc512c9940891ea009a10a5eb3f0b973d91bf18",
+    "tree": "41e52ee8c79b13e2af9ef6b8640c462f53fa891e"
   },
   "assets": [
     {
       "filename": "AMU Studio_0.1.0-beta.3_x64-ai-live-setup.exe",
-      "bytes": 26089507,
-      "sha256": "77598d3d4a918d9f5c8067fa0613a31ccdb14f8eb14f0676a821ea911c32ddc6",
+      "bytes": 26081539,
+      "sha256": "632503245f0f8003bcc16d9cc34d74a07a3d11d89954d6af06b9fb055ae2d4ab",
       "authenticode": "NotSigned",
       "install_mode": "currentUser (NSIS)",
       "release_asset": true
