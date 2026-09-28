@@ -1,0 +1,37 @@
+{
+  "format": "wi-t.kokoroamu-release-asset-manifest.v1",
+  "version": "v0.1.0-beta.3",
+  "state": "CANDIDATE_NOT_RELEASED",
+  "binary_build_source": {
+    "repository": "wi-tcom/KOKOROAMU-STUDIO",
+    "repository_visibility": "private",
+    "branch": "claude/release-beta3",
+    "exact_revision": "4fc512c9940891ea009a10a5eb3f0b973d91bf18",
+    "tree": "41e52ee8c79b13e2af9ef6b8640c462f53fa891e"
+  },
+  "assets": [
+    {
+      "filename": "AMU Studio_0.1.0-beta.3_x64-ai-live-setup.exe",
+      "bytes": 26081539,
+      "sha256": "632503245f0f8003bcc16d9cc34d74a07a3d11d89954d6af06b9fb055ae2d4ab",
+      "authenticode": "NotSigned",
+      "install_mode": "currentUser (NSIS)",
+      "release_asset": true
+    }
+  ],
+  "embedded": {
+    "samples": [
+      {
+        "file": "saku-pack-sample-1.1.0.zip",
+        "sha256": "1e5a20855371f1f4e90a52f0142c8154fd787034f6e0babee1e9b9419b277c8c",
+        "license": "LicenseRef-WIT-Sample-1.0"
+      }
+    ],
+    "ai_mode": "live",
+    "seat8": "in-app confirmation"
+  },
+  "not_distributed": [
+    "AMU Seat8 Console"
+  ],
+  "note_ja": "照合値は、ビルドの記録（ENVELOPE）と実測（sha256sum）の一致を確かめたもの。回帰の結果によって差し替えることがある。"
+}
