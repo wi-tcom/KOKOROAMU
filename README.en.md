@@ -47,7 +47,7 @@ The following services are **in preparation**. Registration and applications are
 
 - SAKU Repair Desk
 - AMU Evaluation Center
-- ERABAZU WORKS
+- ERABAZU.WORKS
 
 You can read about SAKU Repair Desk and AMU Evaluation Center on the overview page (https://support.kokoroamu.jp/, in Japanese). The start of registration will be announced on kokoroamu.jp.
 
