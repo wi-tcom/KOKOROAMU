@@ -1,4 +1,4 @@
-# AMU Studio v0.1.0-beta.3 (beta)
+# AMU Studio v0.1.0-beta.3.1 (beta)
 
 This is a translation. The Japanese version ([README.md](README.md)) prevails.
 
@@ -12,32 +12,41 @@ This repository is **for distribution only**. It does not contain the app's sour
 
 ## About this beta
 
-- This version is a beta (Pre-release).
-- **It is not code-signed yet.** Windows SmartScreen or antivirus software may warn or stop it from running.
+- This version is a beta (Pre-release). The contents of AMU Studio are the same as v0.1.0-beta.3; it has been code-signed and published again. "AMU Seat8 Console" (demo version), which Seat 8 (a person) uses, is also included.
+- The installer carries a **code signature** (signer: wi-t.com Inc.). Even with a signature, Windows SmartScreen may show a warning until a reputation has built up.
 - Before running it, check that the installer's SHA-256 matches the value below.
 - **AI answers are drafts.** They do not constitute sign-off, a decision or a production record.
+- The settings screen of AMU Studio still shows old text from before the signature was added (such as 「β は未署名・未公開」, "the beta is unsigned and unpublished"). This will be fixed in the next version.
 
 ## Install and use
 
-1. Download `AMU Studio_0.1.0-beta.3_x64-ai-live-setup.exe` from the [Releases](https://github.com/wi-tcom/KOKOROAMU/releases) of this repository.
-2. Check that its SHA-256 matches `632503245f0f8003bcc16d9cc34d74a07a3d11d89954d6af06b9fb055ae2d4ab` (26,081,539 bytes).
-   `Get-FileHash ".\AMU Studio_0.1.0-beta.3_x64-ai-live-setup.exe" -Algorithm SHA256`
+1. Download `AMU Studio_0.1.0-beta.3.1_x64-ai-live-setup.exe` from the [Releases](https://github.com/wi-tcom/KOKOROAMU/releases) of this repository.
+2. Check that its SHA-256 matches `14e208afbce92821dc05cab0ce8dde73c9c77dbaa9455054db2ecc733a06fea4` (26,253,720 bytes).
+   `Get-FileHash ".\AMU Studio_0.1.0-beta.3.1_x64-ai-live-setup.exe" -Algorithm SHA256`
 3. Install and start it. It installs per user; administrator rights are not required. If SmartScreen shows a warning, press 「詳細情報」 then 「実行」 ("More info" then "Run anyway" on English Windows).
 4. Use your own API key for the AI provider (Anthropic or OpenAI). The key is stored in Credential Manager on this PC.
 
 **AI usage fees are billed by the AI provider to the owner of the API key.** The app shows estimates based on the prices published by the provider.
 
+### First launch
+
+- The first time you start the app, it may show "Not Responding" for a few minutes. With AMU Seat8 Console, the whole PC once stopped responding for about two minutes on the first start.
+- If this happens, please wait without closing the app.
+- From the second time on, it starts quickly (in our tests, AMU Studio started in about 11 seconds the second time).
+
+## AMU Seat8 Console (demo version)
+
+- A separate app from AMU Studio, for Seat 8 (a person) to confirm or reject. It does not connect to an external AI.
+- Install `AMU Seat8 Console_0.1.0-beta.3.1_x64-setup.exe` (26,230,632 bytes, SHA-256 `6f8717953f3e3d828c2714db14b3a897d3bb77a10986243c297d453b980147ef`) from the [Releases](https://github.com/wi-tcom/KOKOROAMU/releases), separately from AMU Studio.
+- AMU Studio and AMU Seat8 Console exchange items through the same shared folder, each pointing to it by path. A synced folder of Google Drive for desktop can also be used (AMU does not communicate with Google directly). The text of Seat 8's answers is placed in the folder sealed.
+- **This is a demo version.** The issuer and RA are not the production ones, and the screen shows DEMO.
+- There are no screens for creating sign-offs, advice, inquiries or contacts (confirming and rejecting only). The round trip on one PC has been checked. The round trip between two PCs has not been checked yet.
+
 ## Changes in this release
 
-- **Fast council added.** Requests that need judgment are checked with fewer transmissions. The views of the six seats are gathered in one call, and only the seats that disagree, for example, are checked individually.
-- **Choice of council method:** 「速い合議」 (fast council, the default) / 「6 席の合議・早く終える」 (six-seat council, finish early) / 「6 席の合議・3 巡回す」 (six-seat council, three rounds). The six-seat councils send more transmissions and cost more.
-- **「アンバーとして合議にかける」 (send to the council as amber) button added.** When Seat 1's classification is lighter than amber, it is raised to amber and sent to the council; even if the council agrees, no answer is given until Seat 8 (a person) agrees.
-- **The model is chosen from a list before you start.** Each model shows an estimated unit price based on the provider's price list.
-- **「考える量」 (amount of thinking) can be chosen:** 「提供元に任せる」 (leave it to the provider, the default) / 「少なく」 (less) / 「考えない」 (no thinking). The effect of reducing the amount of thinking on the answers has not been checked yet.
-- **Lower cost by reusing the Character's text (caching).**
-- **Signatures of ERABAZU occupation templates are checked against the published key list.**
-- **Self-made Character ZIPs from SAKU can be imported.** Because they carry no signature, they are marked 「自作・未確認」 (self-made, not checked). In this version, you can only import them and add them to the list; you cannot yet put a self-made Character in a team and run it.
-- **Three sample-mode Characters bundled.** Choose them with 「サンプルを読み込む」 (Load samples) in Character selection (rights terms `LicenseRef-WIT-Sample-1.0`; not OSS).
+- **The installer and the executables inside it have been code-signed.** The signature shows only that the files were made by wi-t.com Inc. and that they have not changed since they were signed. It does not show that the contents are correct or that they are safe.
+- **AMU Seat8 Console (demo version) added.**
+- The features, screens and text of AMU Studio are the same as in v0.1.0-beta.3. v0.1.0-beta.3 (unsigned) stays published as it is.
 
 For details, see the release notes in [Releases](https://github.com/wi-tcom/KOKOROAMU/releases).
 

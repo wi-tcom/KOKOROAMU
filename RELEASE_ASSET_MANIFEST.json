@@ -1,20 +1,29 @@
 {
   "format": "wi-t.kokoroamu-release-asset-manifest.v1",
-  "version": "v0.1.0-beta.3",
-  "state": "CANDIDATE_NOT_RELEASED",
+  "version": "v0.1.0-beta.3.1",
+  "state": "PRE_RELEASE",
   "binary_build_source": {
     "repository": "wi-tcom/KOKOROAMU-STUDIO",
     "repository_visibility": "private",
-    "branch": "claude/release-beta3",
-    "exact_revision": "4fc512c9940891ea009a10a5eb3f0b973d91bf18",
-    "tree": "41e52ee8c79b13e2af9ef6b8640c462f53fa891e"
+    "branch": "claude/release-beta3.1",
+    "exact_revision": "22657ae2e4cd4b1f5955170888544642b49328e7",
+    "tree": "73df628977e805f2ea8892a50b567389566e647c",
+    "product_code_from": "4fc512c9940891ea009a10a5eb3f0b973d91bf18"
   },
   "assets": [
     {
-      "filename": "AMU Studio_0.1.0-beta.3_x64-ai-live-setup.exe",
-      "bytes": 26081539,
-      "sha256": "632503245f0f8003bcc16d9cc34d74a07a3d11d89954d6af06b9fb055ae2d4ab",
-      "authenticode": "NotSigned",
+      "filename": "AMU Studio_0.1.0-beta.3.1_x64-ai-live-setup.exe",
+      "bytes": 26253720,
+      "sha256": "14e208afbce92821dc05cab0ce8dde73c9c77dbaa9455054db2ecc733a06fea4",
+      "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
+      "install_mode": "currentUser (NSIS)",
+      "release_asset": true
+    },
+    {
+      "filename": "AMU Seat8 Console_0.1.0-beta.3.1_x64-setup.exe",
+      "bytes": 26230632,
+      "sha256": "6f8717953f3e3d828c2714db14b3a897d3bb77a10986243c297d453b980147ef",
+      "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
       "install_mode": "currentUser (NSIS)",
       "release_asset": true
     }
@@ -23,15 +32,14 @@
     "samples": [
       {
         "file": "saku-pack-sample-1.1.0.zip",
+        "in": "AMU Studio",
         "sha256": "1e5a20855371f1f4e90a52f0142c8154fd787034f6e0babee1e9b9419b277c8c",
         "license": "LicenseRef-WIT-Sample-1.0"
       }
     ],
-    "ai_mode": "live",
-    "seat8": "in-app confirmation"
+    "ai_mode": { "AMU Studio": "live", "AMU Seat8 Console": "networkless" },
+    "seat8": { "AMU Studio": "in-app confirmation; Seat8 Console requests (platform mock, DEMO)", "AMU Seat8 Console": "platform mock (DEMO), port 43118" }
   },
-  "not_distributed": [
-    "AMU Seat8 Console"
-  ],
-  "note_ja": "照合値は、ビルドの記録（ENVELOPE）と実測（sha256sum）の一致を確かめたもの。回帰の結果によって差し替えることがある。"
+  "not_distributed": [],
+  "note_ja": "製品のコードは β.3（4fc512c）と同じで、版の番号と署名だけを変えた。照合値は、組み立てた物の実測（sha256sum）と、7-Zip で展開した中の exe・dll すべての Authenticode（Valid・wi-t.com Inc.・タイムスタンプあり）を確かめたもの。8 席コンソールは 1 台の PC での往復（確認・却下）を確かめた。2 台の PC での往復は未確認。"
 }
