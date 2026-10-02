@@ -10,7 +10,7 @@ AMU Studio は、SAKU で作ったキャラクターに仕事と記憶を与え�
 
 ## β版について
 
-- この版はβ（Pre-release）です。AMU Studio の中身は v0.1.0-beta.3 と同じで、コード署名を付けて出し直しました。8 席（人）が使う「AMU 8 席コンソール」（デモ版）も添えています。
+- この版はβ（Pre-release）です。AMU Studio の機能は v0.1.0-beta.3 と同じで、コード署名を付けて出し直しました。8 席（人）が使う「AMU 8 席コンソール」（デモ版）も添えています。
 - インストーラーには**コード署名**（署名者 wi-t.com Inc.）があります。署名があっても、評判が積み上がるまで Windows SmartScreen が警告を出すことがあります。
 - 実行する前に、インストーラーの SHA-256 が、下の値と一致することを確かめてください。
 - **AI の答えは「下書き」です。** 承認・決裁・本番の記録にはなりません。
@@ -19,7 +19,7 @@ AMU Studio は、SAKU で作ったキャラクターに仕事と記憶を与え�
 ## インストールして使う
 
 1. このリポジトリの [Releases](https://github.com/wi-tcom/KOKOROAMU/releases) から、`AMU Studio_0.1.0-beta.3.1_x64-ai-live-setup.exe` を取得します。
-2. SHA-256 が `14e208afbce92821dc05cab0ce8dde73c9c77dbaa9455054db2ecc733a06fea4`（26,253,720 バイト）と一致することを確かめます。
+2. SHA-256 が `89abad2f05718002e86c15087e94d6bc9e9168c912ee65d9237fcf822fa9eae5`（26,252,232 バイト）と一致することを確かめます。
    `Get-FileHash ".\AMU Studio_0.1.0-beta.3.1_x64-ai-live-setup.exe" -Algorithm SHA256`
 3. インストールして起動します。インストールはユーザーごとで、管理者の権限は要りません。SmartScreen の警告が出たら「詳細情報」→「実行」の順に押します。
 4. AI の提供元（Anthropic または OpenAI）の API キーは、ご自分のものを使います。キーは、この PC の資格情報マネージャーに保存されます。
@@ -35,7 +35,7 @@ AMU Studio は、SAKU で作ったキャラクターに仕事と記憶を与え�
 ## AMU 8 席コンソール（デモ版）
 
 - 8 席（人）が確認・却下するための、AMU Studio とは別のアプリです。外部の AI には接続しません。
-- [Releases](https://github.com/wi-tcom/KOKOROAMU/releases) の `AMU Seat8 Console_0.1.0-beta.3.1_x64-setup.exe`（26,230,632 バイト、SHA-256 `6f8717953f3e3d828c2714db14b3a897d3bb77a10986243c297d453b980147ef`）を、AMU Studio とは別に入れます。
+- [Releases](https://github.com/wi-tcom/KOKOROAMU/releases) の `AMU Seat8 Console_0.1.0-beta.3.1_x64-setup.exe`（26,233,720 バイト、SHA-256 `fe7355aa495fc1b1dac495ebf666ffbc0b04d003deb42fdc8b1e3cd0824ef21f`）を、AMU Studio とは別に入れます。
 - AMU Studio と 8 席コンソールは、同じ共有フォルダーをパスで指してやり取りします。Google ドライブ（パソコン版）の同期フォルダーも使えます（AMU は Google と直接は通信しません）。8 席の回答の本文は、封緘して置きます。
 - **デモ版です。** 発行者・RA は本番のものではなく、画面に DEMO と出ます。
 - 承認・助言・照会・連絡を作る画面はありません（確認と却下だけです）。1 台の PC での往復は確かめました。2 台の PC での往復は、まだ確かめていません。
@@ -44,7 +44,8 @@ AMU Studio は、SAKU で作ったキャラクターに仕事と記憶を与え�
 
 - **インストーラーと、その中の実行ファイルに、コード署名を付けました。** 署名が示すのは、作ったのが wi-t.com Inc. であることと、署名の後にファイルが変わっていないことまでです。中身が正しいことや、安全であることを示すものではありません。
 - **AMU 8 席コンソール（デモ版）を添えました。**
-- AMU Studio の機能・画面・文は v0.1.0-beta.3 と同じです。v0.1.0-beta.3（署名なし）は、公開のまま残します。
+- **アプリのアイコンを新しくしました**（AMU Studio と 8 席コンソール）。
+- AMU Studio の機能・画面・文は、アイコンのほかは v0.1.0-beta.3 と同じです。v0.1.0-beta.3（署名なし）は、公開のまま残します。
 
 詳しくは、[Releases](https://github.com/wi-tcom/KOKOROAMU/releases) のリリースノートをご覧ください。
 
@@ -73,5 +74,7 @@ SAKU 診療所と AMU トレーニングセンターの内容は、紹介ペー�
 - 質問：お問い合わせ窓口 https://www.wi-t.com/contact-8
 - 脆弱性：公開の Issue には書かず、お問い合わせ窓口へお知らせください。
 - 問い合わせに、API キーやパスワードは書かないでください。
+
+訂正の履歴：2026 年 10 月 2 日　アプリのアイコンを新しいものにしたインストーラーに差し替えました（機能は同じです）。前のインストーラーの SHA-256 は、AMU Studio が `14e208afbce92821dc05cab0ce8dde73c9c77dbaa9455054db2ecc733a06fea4`、8 席コンソールが `6f8717953f3e3d828c2714db14b3a897d3bb77a10986243c297d453b980147ef` です。
 
 © 株式会社wi-t.com
