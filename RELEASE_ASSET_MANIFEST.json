@@ -1,34 +1,33 @@
 {
   "format": "wi-t.kokoroamu-release-asset-manifest.v1",
-  "version": "v0.1.0-beta.3.1",
+  "version": "v0.1.0-beta.4",
   "state": "PRE_RELEASE",
   "binary_build_source": {
     "repository": "wi-tcom/KOKOROAMU-STUDIO",
     "repository_visibility": "private",
-    "branch": "claude/release-beta3.1-icons",
-    "exact_revision": "c87de3dcc40e1b86b30853759d68646a636d60aa",
-    "tree": "62ed4a89a0fcac2bd79d333db5d9cbe3319ebe6d",
-    "product_code_from": "4fc512c9940891ea009a10a5eb3f0b973d91bf18",
-    "icons_added_to": "22657ae2e4cd4b1f5955170888544642b49328e7"
+    "branch": "claude/release-beta4",
+    "exact_revision": "d667cb2108a5674b46b61b8866af15b8058af5be",
+    "tree": "3e050329a1f3b9f7e7f6e912aba80cdf6b490790",
+    "main_base": "bc663ffa",
+    "built_at": "2026-10-03T00:10:08Z",
+    "note_ja": "Studio は 2026-10-03T00:28Z に同じ d667cb2・同じ built_at で組み立て直した（初回の組み立てで --samples-dir を付け忘れ、サンプルが入っていなかったため）。8 席コンソールは初回のまま。"
   },
   "assets": [
     {
-      "filename": "AMU Studio_0.1.0-beta.3.1_x64-ai-live-setup.exe",
-      "bytes": 26252232,
-      "sha256": "89abad2f05718002e86c15087e94d6bc9e9168c912ee65d9237fcf822fa9eae5",
+      "filename": "AMU Studio_0.1.0-beta.4_x64-ai-live-setup.exe",
+      "bytes": 26327552,
+      "sha256": "7eb8161d8c0b0801013cdace7734a39fd38e6f02bccec827721787c64e570b04",
       "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
       "install_mode": "currentUser (NSIS)",
-      "release_asset": true,
-      "app_icon": "amu.ico 7bec52c8da1afd86374077271403ebde8b70801314960d8917dd931915ee9b40"
+      "release_asset": true
     },
     {
-      "filename": "AMU Seat8 Console_0.1.0-beta.3.1_x64-setup.exe",
-      "bytes": 26233720,
-      "sha256": "fe7355aa495fc1b1dac495ebf666ffbc0b04d003deb42fdc8b1e3cd0824ef21f",
+      "filename": "AMU Seat8 Console_0.1.0-beta.4_x64-setup.exe",
+      "bytes": 26304624,
+      "sha256": "93b5967e3f8b1b795e8d48335b4d7b8170f94609ccedadd7c9b93c60b22009a0",
       "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
       "install_mode": "currentUser (NSIS)",
-      "release_asset": true,
-      "app_icon": "amu-seat8.ico 9d7af12bc87a5a38bdf53d28fc7d026fac3da16604b68b2c618b47cb2a9a390d"
+      "release_asset": true
     }
   ],
   "embedded": {
@@ -47,17 +46,16 @@
     "seat8": {
       "AMU Studio": "in-app confirmation; Seat8 Console requests (platform mock, DEMO)",
       "AMU Seat8 Console": "platform mock (DEMO), port 43118"
+    },
+    "credential_bridge": {
+      "file": "amu-cred-bridge.exe",
+      "sha256_before_signing": "93d4c667bf825793862d120c69394f4a3852a0e353fe9d7e7b9878bb47717207",
+      "bytes_before_signing": 128512,
+      "recorded_in": "amu-ai-service BUILD.json (service bundle c5d235e5987a754b28154e68cdc2e2c6f1b99976bf82ac1bd73011e492f0d8db, the same in both installers)",
+      "built": "once on the build PC, cargo build --release, no cargo test (Owner 2026-10-03)",
+      "signed_in_installer": "yes (Authenticode, the same signing as the other executables)"
     }
   },
   "not_distributed": [],
-  "note_ja": "製品のコードは β.3（4fc512c）と同じで、版の番号・署名・アプリのアイコンだけを変えた。照合値は、組み立てた物の実測（sha256sum）と、7-Zip で展開した中の exe・dll すべての Authenticode（Valid・wi-t.com Inc.・タイムスタンプあり）を確かめたもの。差し替えた後の実機の確かめはしていない（Owner の指示で署名と sha256 の照合だけ）。8 席コンソールは、差し替え前のインストーラーで 1 台の PC での往復（確認・却下）を確かめた。2 台の PC での往復は未確認。",
-  "replaced": {
-    "at": "2026-10-02",
-    "reason_ja": "アプリのアイコンを v5 にしたインストーラーに差し替えた（Owner 2026-10-02）。機能は同じ。確かめは署名と sha256 の照合（Owner の指示）。",
-    "previous": {
-      "AMU Studio_0.1.0-beta.3.1_x64-ai-live-setup.exe": "14e208afbce92821dc05cab0ce8dde73c9c77dbaa9455054db2ecc733a06fea4",
-      "AMU Seat8 Console_0.1.0-beta.3.1_x64-setup.exe": "6f8717953f3e3d828c2714db14b3a897d3bb77a10986243c297d453b980147ef",
-      "build": "22657ae2e4cd4b1f5955170888544642b49328e7"
-    }
-  }
+  "note_ja": "8 席は β.3.1 と同じデモ（platform mock）のまま（Owner 2026-10-03）。照合値は、組み立てた物の実測（Get-FileHash）と、Authenticode の確かめ。実機（ビルドの PC）で両方を入れて起動を確かめた（Studio は組み立て直した後にもう一度）。"
 }
