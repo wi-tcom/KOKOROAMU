@@ -1,30 +1,29 @@
 {
   "format": "wi-t.kokoroamu-release-asset-manifest.v1",
-  "version": "v0.1.0-beta.4",
+  "version": "v0.1.0-beta.4.1",
   "state": "PRE_RELEASE",
   "binary_build_source": {
     "repository": "wi-tcom/KOKOROAMU-STUDIO",
     "repository_visibility": "private",
-    "branch": "claude/release-beta4",
-    "exact_revision": "d667cb2108a5674b46b61b8866af15b8058af5be",
-    "tree": "3e050329a1f3b9f7e7f6e912aba80cdf6b490790",
-    "main_base": "bc663ffa",
-    "built_at": "2026-10-03T00:10:08Z",
-    "note_ja": "Studio は 2026-10-03T00:28Z に同じ d667cb2・同じ built_at で組み立て直した（初回の組み立てで --samples-dir を付け忘れ、サンプルが入っていなかったため）。8 席コンソールは初回のまま。"
+    "branch": "claude/release-beta4.1",
+    "exact_revision": "28d5998070b4a636b62c990e560d7c887d2d1c6f",
+    "tree": "5d8aea373940572ed649ef0c935719bb7a656c52",
+    "main_base": "314ef5e",
+    "built_at": "2026-10-03T01:00:04Z"
   },
   "assets": [
     {
-      "filename": "AMU Studio_0.1.0-beta.4_x64-ai-live-setup.exe",
-      "bytes": 26327552,
-      "sha256": "7eb8161d8c0b0801013cdace7734a39fd38e6f02bccec827721787c64e570b04",
+      "filename": "AMU Studio_0.1.0-beta.4.1_x64-ai-live-setup.exe",
+      "bytes": 26319112,
+      "sha256": "6fa845481c5c358b60b8a264f3c2957878146f13cb96b3132bafd7d429546b0d",
       "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
       "install_mode": "currentUser (NSIS)",
       "release_asset": true
     },
     {
-      "filename": "AMU Seat8 Console_0.1.0-beta.4_x64-setup.exe",
-      "bytes": 26304624,
-      "sha256": "93b5967e3f8b1b795e8d48335b4d7b8170f94609ccedadd7c9b93c60b22009a0",
+      "filename": "AMU Seat8 Console_0.1.0-beta.4.1_x64-setup.exe",
+      "bytes": 26314752,
+      "sha256": "17616848a6eac8912c61998bd7f96fcbec744af0c8e611db7be1cfb847a2207c",
       "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
       "install_mode": "currentUser (NSIS)",
       "release_asset": true
@@ -51,11 +50,15 @@
       "file": "amu-cred-bridge.exe",
       "sha256_before_signing": "93d4c667bf825793862d120c69394f4a3852a0e353fe9d7e7b9878bb47717207",
       "bytes_before_signing": 128512,
-      "recorded_in": "amu-ai-service BUILD.json (service bundle c5d235e5987a754b28154e68cdc2e2c6f1b99976bf82ac1bd73011e492f0d8db, the same in both installers)",
-      "built": "once on the build PC, cargo build --release, no cargo test (Owner 2026-10-03)",
+      "recorded_in": "amu-ai-service BUILD.json (service bundle c5d235e5987a754b28154e68cdc2e2c6f1b99976bf82ac1bd73011e492f0d8db, the same in both installers and the same as v0.1.0-beta.4)",
+      "built": "not rebuilt for v0.1.0-beta.4.1 (the v0.1.0-beta.4 bridge)",
       "signed_in_installer": "yes (Authenticode, the same signing as the other executables)"
     }
   },
+  "changes_from": {
+    "version": "v0.1.0-beta.4",
+    "pull_requests": ["wi-tcom/KOKOROAMU-STUDIO#146", "wi-tcom/KOKOROAMU-STUDIO#147", "wi-tcom/KOKOROAMU-STUDIO#148"]
+  },
   "not_distributed": [],
-  "note_ja": "8 席は β.3.1 と同じデモ（platform mock）のまま（Owner 2026-10-03）。照合値は、組み立てた物の実測（Get-FileHash）と、Authenticode の確かめ。実機（ビルドの PC）で両方を入れて起動を確かめた（Studio は組み立て直した後にもう一度）。"
+  "note_ja": "8 席は v0.1.0-beta.4 と同じデモ（platform mock）のまま。照合値は、組み立てた物の実測（Get-FileHash）と Authenticode の確かめ。実機（ビルドの PC）で両方を入れて起動し、設定の画面の新しい文（#147）と編集の画面の信頼の一覧の知らせ（#148）を確かめた。"
 }
