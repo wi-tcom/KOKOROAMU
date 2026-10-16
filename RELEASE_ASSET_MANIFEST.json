@@ -1,64 +1,63 @@
 {
   "format": "wi-t.kokoroamu-release-asset-manifest.v1",
-  "version": "v0.1.0-beta.4.1",
+  "version": "v0.1.0-beta.5",
   "state": "PRE_RELEASE",
   "binary_build_source": {
     "repository": "wi-tcom/KOKOROAMU-STUDIO",
     "repository_visibility": "private",
-    "branch": "claude/release-beta4.1",
-    "exact_revision": "28d5998070b4a636b62c990e560d7c887d2d1c6f",
-    "tree": "5d8aea373940572ed649ef0c935719bb7a656c52",
-    "main_base": "314ef5e",
-    "built_at": "2026-10-03T01:00:04Z"
+    "branch": "__TBD__",
+    "exact_revision": "__TBD__",
+    "tree": "__TBD__",
+    "main_base": "__TBD__",
+    "built_at": "__TBD__"
+  },
+  "runtime_build_source": {
+    "repository": "wi-tcom/KOKOROAMU-RUNTIME",
+    "repository_visibility": "private",
+    "exact_revision": "__TBD__",
+    "built_at": "__TBD__"
   },
   "assets": [
     {
-      "filename": "AMU Studio_0.1.0-beta.4.1_x64-ai-live-setup.exe",
-      "bytes": 26319112,
-      "sha256": "6fa845481c5c358b60b8a264f3c2957878146f13cb96b3132bafd7d429546b0d",
-      "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
+      "filename": "__TBD__",
+      "bytes": "__TBD__",
+      "sha256": "__TBD__",
+      "authenticode": "__TBD__",
       "install_mode": "currentUser (NSIS)",
       "release_asset": true
     },
     {
-      "filename": "AMU Seat8 Console_0.1.0-beta.4.1_x64-setup.exe",
-      "bytes": 26314752,
-      "sha256": "17616848a6eac8912c61998bd7f96fcbec744af0c8e611db7be1cfb847a2207c",
-      "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
+      "filename": "__TBD__",
+      "bytes": "__TBD__",
+      "sha256": "__TBD__",
+      "authenticode": "__TBD__",
       "install_mode": "currentUser (NSIS)",
+      "release_asset": true
+    },
+    {
+      "filename": "__TBD__",
+      "bytes": "__TBD__",
+      "sha256": "__TBD__",
+      "authenticode": "__TBD__",
+      "install_mode": "zip (no installer)",
       "release_asset": true
     }
   ],
   "embedded": {
-    "samples": [
-      {
-        "file": "saku-pack-sample-1.1.0.zip",
-        "in": "AMU Studio",
-        "sha256": "1e5a20855371f1f4e90a52f0142c8154fd787034f6e0babee1e9b9419b277c8c",
-        "license": "LicenseRef-WIT-Sample-1.0"
-      }
-    ],
-    "ai_mode": {
-      "AMU Studio": "live",
-      "AMU Seat8 Console": "networkless"
+    "in_amu_studio": {
+      "seat8_console_installer": { "filename": "__TBD__", "sha256": "__TBD__" },
+      "runtime_zip": { "filename": "__TBD__", "sha256": "__TBD__" }
     },
-    "seat8": {
-      "AMU Studio": "in-app confirmation; Seat8 Console requests (platform mock, DEMO)",
-      "AMU Seat8 Console": "platform mock (DEMO), port 43118"
-    },
-    "credential_bridge": {
-      "file": "amu-cred-bridge.exe",
-      "sha256_before_signing": "93d4c667bf825793862d120c69394f4a3852a0e353fe9d7e7b9878bb47717207",
-      "bytes_before_signing": 128512,
-      "recorded_in": "amu-ai-service BUILD.json (service bundle c5d235e5987a754b28154e68cdc2e2c6f1b99976bf82ac1bd73011e492f0d8db, the same in both installers and the same as v0.1.0-beta.4)",
-      "built": "not rebuilt for v0.1.0-beta.4.1 (the v0.1.0-beta.4 bridge)",
-      "signed_in_installer": "yes (Authenticode, the same signing as the other executables)"
-    }
+    "samples": "__TBD__",
+    "ai_mode": "__TBD__",
+    "seat8": "__TBD__",
+    "experimental": "__TBD__",
+    "credential_bridge": "__TBD__"
   },
   "changes_from": {
-    "version": "v0.1.0-beta.4",
-    "pull_requests": ["wi-tcom/KOKOROAMU-STUDIO#146", "wi-tcom/KOKOROAMU-STUDIO#147", "wi-tcom/KOKOROAMU-STUDIO#148"]
+    "version": "v0.1.0-beta.4.1",
+    "pull_requests": "__TBD__"
   },
   "not_distributed": [],
-  "note_ja": "8 席は v0.1.0-beta.4 と同じデモ（platform mock）のまま。照合値は、組み立てた物の実測（Get-FileHash）と Authenticode の確かめ。実機（ビルドの PC）で両方を入れて起動し、設定の画面の新しい文（#147）と編集の画面の信頼の一覧の知らせ（#148）を確かめた。"
+  "note_ja": "__TBD__"
 }
