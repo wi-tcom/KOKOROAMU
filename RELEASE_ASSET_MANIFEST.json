@@ -1,64 +1,90 @@
 {
   "format": "wi-t.kokoroamu-release-asset-manifest.v1",
-  "version": "v0.1.0-beta.4.1",
+  "version": "v0.1.0-beta.5",
   "state": "PRE_RELEASE",
   "binary_build_source": {
     "repository": "wi-tcom/KOKOROAMU-STUDIO",
     "repository_visibility": "private",
-    "branch": "claude/release-beta4.1",
-    "exact_revision": "28d5998070b4a636b62c990e560d7c887d2d1c6f",
-    "tree": "5d8aea373940572ed649ef0c935719bb7a656c52",
-    "main_base": "314ef5e",
-    "built_at": "2026-10-03T01:00:04Z"
+    "branch": "main",
+    "exact_revision": "552b15febe0423418ecd8faae8d96d7b2c4148a3",
+    "tree": "98981c0fe81e23c06ce13458834d9febc9e97602",
+    "main_base": "552b15f",
+    "built_at": "2026-10-16T05:18:52Z"
+  },
+  "runtime_build_source": {
+    "repository": "wi-tcom/KOKOROAMU-RUNTIME",
+    "repository_visibility": "private",
+    "exact_revision": "d38b0517dd514958e238933f12ad9023029a6260",
+    "built_at": "2026-10-15T22:26:30Z"
   },
   "assets": [
     {
-      "filename": "AMU Studio_0.1.0-beta.4.1_x64-ai-live-setup.exe",
-      "bytes": 26319112,
-      "sha256": "6fa845481c5c358b60b8a264f3c2957878146f13cb96b3132bafd7d429546b0d",
+      "filename": "AMU.Studio_0.1.0-beta.5_x64-ai-live-setup.exe",
+      "bytes": 94702896,
+      "sha256": "782ad233be06ced8b9ed130b3d3e9d5e355ead28a1de03bf5d28c50a4865b7af",
       "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
       "install_mode": "currentUser (NSIS)",
       "release_asset": true
     },
     {
-      "filename": "AMU Seat8 Console_0.1.0-beta.4.1_x64-setup.exe",
-      "bytes": 26314752,
-      "sha256": "17616848a6eac8912c61998bd7f96fcbec744af0c8e611db7be1cfb847a2207c",
+      "filename": "AMU.Seat8.Console_0.1.0-beta.5_x64-ai-live-setup.exe",
+      "bytes": 27045096,
+      "sha256": "06758bd12b6a3d7f79f82c76e1da21752ace71a61f06846c751446a7a3d19985",
       "authenticode": "Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
       "install_mode": "currentUser (NSIS)",
+      "release_asset": true
+    },
+    {
+      "filename": "AMU_RUNTIME_0.1.0-d38b051_win-x64.zip",
+      "bytes": 40616774,
+      "sha256": "552e7f861febf391e92187383e036508289a94a5217cab1fb1ab36195b8e670d",
+      "authenticode": "zip (not signed itself); the executables inside are Valid (CN=wi-t.com Inc., Azure Artifact Signing, Microsoft timestamp)",
+      "install_mode": "zip (no installer)",
       "release_asset": true
     }
   ],
   "embedded": {
+    "in_amu_studio": {
+      "seat8_console_installer": {
+        "filename": "AMU Seat8 Console_0.1.0-beta.5_x64-ai-live-setup.exe",
+        "sha256": "06758bd12b6a3d7f79f82c76e1da21752ace71a61f06846c751446a7a3d19985",
+        "bytes": 27045096
+      },
+      "runtime_zip": {
+        "filename": "AMU_RUNTIME_0.1.0-d38b051_win-x64.zip",
+        "sha256": "552e7f861febf391e92187383e036508289a94a5217cab1fb1ab36195b8e670d",
+        "bytes": 40616774
+      }
+    },
     "samples": [
       {
-        "file": "saku-pack-sample-1.1.0.zip",
+        "file": "saku-pack-sample-1.2.0.zip",
         "in": "AMU Studio",
-        "sha256": "1e5a20855371f1f4e90a52f0142c8154fd787034f6e0babee1e9b9419b277c8c",
+        "sha256": "f30462275a35d53122518941457d64f1ec07ca748efe681caa46d3d0dc384126",
         "license": "LicenseRef-WIT-Sample-1.0"
       }
     ],
     "ai_mode": {
       "AMU Studio": "live",
-      "AMU Seat8 Console": "networkless"
+      "AMU Seat8 Console": "live"
     },
     "seat8": {
-      "AMU Studio": "in-app confirmation; Seat8 Console requests (platform mock, DEMO)",
-      "AMU Seat8 Console": "platform mock (DEMO), port 43118"
+      "AMU Studio": "platform none: the passphrase key exchange (requester); the old DEMO flow is not made",
+      "AMU Seat8 Console": "platform none: the passphrase key exchange (receiver)"
     },
-    "credential_bridge": {
-      "file": "amu-cred-bridge.exe",
-      "sha256_before_signing": "93d4c667bf825793862d120c69394f4a3852a0e353fe9d7e7b9878bb47717207",
-      "bytes_before_signing": 128512,
-      "recorded_in": "amu-ai-service BUILD.json (service bundle c5d235e5987a754b28154e68cdc2e2c6f1b99976bf82ac1bd73011e492f0d8db, the same in both installers and the same as v0.1.0-beta.4)",
-      "built": "not rebuilt for v0.1.0-beta.4.1 (the v0.1.0-beta.4 bridge)",
-      "signed_in_installer": "yes (Authenticode, the same signing as the other executables)"
-    }
+    "experimental": {
+      "AMU Seat8 Console": "the AI draft of the 8-seat console is shown as an experimental feature (Owner result 244 (2))"
+    },
+    "approval_ledger": {
+      "installer_hook": "shells/desktop/src-tauri/installer-hooks.nsh",
+      "sha256": "59f505e52d824f63ecbccfd8b28b2f21567b286a8f3363e3ba694f831850802d"
+    },
+    "service_bundle_sha256": "45c70119088117f53fd17a1966b7f29d1d275ff23496447530db30515a087380"
   },
   "changes_from": {
-    "version": "v0.1.0-beta.4",
-    "pull_requests": ["wi-tcom/KOKOROAMU-STUDIO#146", "wi-tcom/KOKOROAMU-STUDIO#147", "wi-tcom/KOKOROAMU-STUDIO#148"]
+    "version": "v0.1.0-beta.4.1",
+    "range": "wi-tcom/KOKOROAMU-STUDIO main 314ef5e..552b15f (v0.1.0-beta.4.1 was built on main_base 314ef5e); wi-tcom/KOKOROAMU-RUNTIME d38b051"
   },
   "not_distributed": [],
-  "note_ja": "8 席は v0.1.0-beta.4 と同じデモ（platform mock）のまま。照合値は、組み立てた物の実測（Get-FileHash）と Authenticode の確かめ。実機（ビルドの PC）で両方を入れて起動し、設定の画面の新しい文（#147）と編集の画面の信頼の一覧の知らせ（#148）を確かめた。"
+  "note_ja": "資産の名前は、GitHub から落ちてくる名前（空白は「.」）で書く（統括の決め、案 B）。照合値は、3 回目の署名の後の組み立て物の実測（Get-FileHash）と Authenticode の確かめ（SAKU Builder(4) が 2026-10-16 に実測。統括の値 ASSET_VALUES_beta5_tokatsu.md と一致）。AMU Studio の installer は、8 席コンソールの installer と Runtime の zip を同梱する（同じ bytes）。"
 }
