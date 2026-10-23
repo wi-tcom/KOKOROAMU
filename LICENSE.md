@@ -1,6 +1,7 @@
 # 権利と利用の条件
 
 利用条件版：【版番号】
+
 施行日：【年月日・時刻（日本時間）】
 
 Copyright © 2026 wi-t.com Inc. All rights reserved.
