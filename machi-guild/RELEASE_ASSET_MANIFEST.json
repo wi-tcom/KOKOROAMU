@@ -1,0 +1,50 @@
+{
+  "format": "wi-t.kokoroamu-release-asset-manifest.v1",
+  "product": "MACHI Guild",
+  "version": "machi-guild-v0.4.0-beta.1",
+  "app_version": "0.4.0-beta.1",
+  "state": "PRE_RELEASE",
+  "binary_build_source": {
+    "repository": "wi-tcom/KOKOROMACHI-guild",
+    "repository_visibility": "private",
+    "branch": "main",
+    "exact_revision": "2314bab29b6140e2472634223f4b197f2f52f0af",
+    "tree": "bfb7f50a8b6d763349749fc7eee914ea838384ca",
+    "built_at": "2026-10-24T03:42:24Z"
+  },
+  "assets": [
+    {
+      "filename": "MACHI.Guild_0.4.0-beta.1_x64-ai-live-setup.exe",
+      "bytes": 26577384,
+      "sha256": "2c7d0e6e773832b068b7794e6afe3d92dd241c13edba367eeae845d55004d92b",
+      "authenticode": "Valid (CN=wi-t.com Inc., Microsoft timestamp; signtool verify /pa exit 0)",
+      "install_mode": "currentUser (NSIS)",
+      "release_asset": true
+    }
+  ],
+  "inside": {
+    "executables_sha256": {
+      "machi-guild.exe": "20bf6244966eb3496d533971bb5a5d2a472ce49c78eb0da3f95dcea0d86805c9",
+      "uninstall.exe": "a524fe3c5f17931c0ffd5c84c8c027be2ecf531604663afc8d3da3080adf7540",
+      "amu-ai-service/amu-ai-service.exe": "0522056f4db0c8e6c48fcc31a699882fe471ff7dcb8d0119b80947637c109a04",
+      "amu-ai-service/amu-cred-bridge.exe": "92b4e3c577b6558c504c404170a567f6fe8ea734f797b7de742c1cb2d451a64b"
+    },
+    "notices_sha256": {
+      "THIRD_PARTY_NOTICES.txt": "caa4e194babeda152c20b614603432de80f9c1492eb81fe4cd3109b6fbd671bd",
+      "amu-ai-service/THIRD_PARTY_NOTICES.txt": "79142dd52b61611d472180cf72bc01e4c96841a5f7f52b59eabd03141d9fc562",
+      "licenses/LICENSE.md": "c9a73ce020012bf014f2f1a505c2f24f57eb8a7972a0bfc1800345de7f225bbd"
+    },
+    "third_party_source": [
+      "cssparser-0.36.0",
+      "cssparser-macros-0.6.1",
+      "dtoa-short-0.3.5",
+      "option-ext-0.2.0",
+      "selectors-0.36.1"
+    ],
+    "license": "licenses/LICENSE.md = KOKOROAMU LICENSE.md 1.0 at 56b36da (effective 2026-10-24 20:00 JST), the same text without the final newline (the repository file is sha256 18cbd164...; the consent import trims the trailing newline)"
+  },
+  "ai_mode": {
+    "MACHI Guild": "live"
+  },
+  "ui_language": "ja only"
+}
