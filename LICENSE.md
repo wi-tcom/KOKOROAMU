@@ -2,7 +2,7 @@
 
 利用条件版：1.0
 
-施行日：【年月日・時刻（日本時間）】
+施行日：2026年10月24日 20時00分（日本時間）
 
 Copyright © 2026 wi-t.com Inc. All rights reserved.
 
