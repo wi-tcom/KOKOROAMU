@@ -55,9 +55,9 @@ MACHI Guild（β）は、下の「MACHI Guild（β）」の節をご覧くださ
 
 MACHI Guild は、キャラクター（AMU Character File、.amupkg）でチームを組み、企画・制作物のレビューを「レビュー担当 → リーダー」の順に進める Windows のアプリです。
 
-- [Releases](https://github.com/wi-tcom/KOKOROAMU/releases) の `machi-guild-v0.4.0-beta.1` から、`【インストーラーのファイル名】`（【バイト数】 バイト、SHA-256 `【SHA-256】`）を取得します。
+- [Releases](https://github.com/wi-tcom/KOKOROAMU/releases) の `machi-guild-v0.4.0-beta.1` から、`MACHI.Guild_0.4.0-beta.1_x64-ai-live-setup.exe`（26,577,384 バイト、SHA-256 `2c7d0e6e773832b068b7794e6afe3d92dd241c13edba367eeae845d55004d92b`）を取得します。
 - 実行する前に、SHA-256 が上の値と一致することを確かめてください。
-  `Get-FileHash ".\【インストーラーのファイル名】" -Algorithm SHA256`
+  `Get-FileHash ".\MACHI.Guild_0.4.0-beta.1_x64-ai-live-setup.exe" -Algorithm SHA256`
   あわせて、ファイルの「プロパティ」→「デジタル署名」で、署名者が wi-t.com Inc. であることを確かめてください。コード署名及びSHA-256の確認は、署名者及び配布ファイルの同一性を確認するためのもので、機能、正確性又は安全性を保証するものではありません。
 - この版はβ（Pre-release）です。この版の画面は日本語だけです。英語の画面はありません。
 - 動作確認では、MACHI Guild 0.4.0-beta.1は、AMU Studio β.5で書き出したAMU Character File（.amupkg）のうち、「AIの提供元」と「AIプラットフォーム」の両方にAnthropic又はOpenAIを設定した確認用ファイルを読み込めました。「AIの提供元」又は「AIプラットフォーム」にOllama（local/ollama）を設定したファイルと、確認に使用したGemini設定の自作ファイルは読み込めませんでした。これ以外の構成は、この互換性確認の対象外です。これは、読み込むファイルの中の設定についての決まりです。読み込んだ後に MACHI Guild で使う AI は、② 実行環境の「送り先」で選べます。この PC の Ollama も選べます。

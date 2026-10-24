@@ -57,9 +57,9 @@ The file names here are the names GitHub downloads (spaces in the names become d
 
 MACHI Guild is a Windows app in which you build a team with Characters (AMU Character Files, .amupkg) and take plans and work products through review in the order "review lead → leader".
 
-- Get `【installer file name】` (【byte count】 bytes, SHA-256 `【SHA-256】`) from `machi-guild-v0.4.0-beta.1` in the [Releases](https://github.com/wi-tcom/KOKOROAMU/releases).
+- Get `MACHI.Guild_0.4.0-beta.1_x64-ai-live-setup.exe` (26,577,384 bytes, SHA-256 `2c7d0e6e773832b068b7794e6afe3d92dd241c13edba367eeae845d55004d92b`) from `machi-guild-v0.4.0-beta.1` in the [Releases](https://github.com/wi-tcom/KOKOROAMU/releases).
 - Before running it, check that its SHA-256 matches the value above.
-  `Get-FileHash ".\【installer file name】" -Algorithm SHA256`
+  `Get-FileHash ".\MACHI.Guild_0.4.0-beta.1_x64-ai-live-setup.exe" -Algorithm SHA256`
   Also check, in the file's "Properties" → "Digital Signatures", that the signer is wi-t.com Inc. A valid code signature indicates that the file was signed with the certificate shown and has not changed since signing. A matching SHA-256 value indicates that the downloaded file matches the value published for this Release. Neither guarantees functionality, accuracy, safety or legal compliance.
 - This version is a beta (Pre-release). The interface in this version is available only in Japanese. An English interface is not included.
 - In testing, MACHI Guild 0.4.0-beta.1 successfully loaded the tested AMU Character Files (`.amupkg`) exported from AMU Studio β.5 when both 「AI の提供元」 (AI provider) and 「AI プラットフォーム」 (AI platform) were set to Anthropic or OpenAI. It did not load files with Ollama (`local/ollama`) configured in either field, or the self-created Gemini-configured file used in the test. Configurations outside this tested scope are not covered by this compatibility statement. This rule is about the settings inside the file being loaded. The AI that MACHI Guild uses after loading can be chosen with 「送り先」 (Destination) in 「② 実行環境」 (② Execution environment). Ollama on this PC can also be chosen.
