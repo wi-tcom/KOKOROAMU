@@ -1,4 +1,4 @@
-# AMU Studio v0.1.0-beta.5 (beta)
+# KOKOROAMU: AMU Studio v0.1.0-beta.5 (beta) / MACHI Guild v0.4.0-beta.1 (beta)
 
 This is a translation. The Japanese version ([README.md](README.md)) prevails.
 
@@ -7,6 +7,8 @@ AMU Studio is a Windows app that gives Characters made in SAKU a job and memory 
 - One Character acts as the point of contact, takes requests and answers them.
 - For requests that need judgment, Seats 2–7 inside the Character exchange views before it answers (1+7).
 - Important points go ahead only after a person (Seat 8) has checked them.
+
+For MACHI Guild (beta), see the "MACHI Guild (beta)" section below.
 
 This repository is **for distribution only**. It does not contain the app's source code.
 
@@ -51,6 +53,23 @@ The file names here are the names GitHub downloads (spaces in the names become d
   `amu-runtime-host.exe --init-ai-ledger --data-dir <the Runtime's data location>`
 - The zip itself has no code signature (a zip file cannot carry one). The executables inside it, once extracted, carry a code signature.
 
+## MACHI Guild (beta)
+
+MACHI Guild is a Windows app in which you build a team with Characters (AMU Character Files, .amupkg) and take plans and work products through review in the order "review lead → leader".
+
+- Get `【installer file name】` (【byte count】 bytes, SHA-256 `【SHA-256】`) from `machi-guild-v0.4.0-beta.1` in the [Releases](https://github.com/wi-tcom/KOKOROAMU/releases).
+- Before running it, check that its SHA-256 matches the value above.
+  `Get-FileHash ".\【installer file name】" -Algorithm SHA256`
+  Also check, in the file's "Properties" → "Digital Signatures", that the signer is wi-t.com Inc. A valid code signature indicates that the file was signed with the certificate shown and has not changed since signing. A matching SHA-256 value indicates that the downloaded file matches the value published for this Release. Neither guarantees functionality, accuracy, safety or legal compliance.
+- This version is a beta (Pre-release). The interface in this version is available only in Japanese. An English interface is not included.
+- [If confirmed] MACHI Guild 0.4.0-beta.1 loads AMU Character Files (`.amupkg`) exported from AMU Studio β.5.
+- [If still not confirmed at 20:00] This version loads AMU Character Files (`.amupkg`). Compatibility with files exported from the currently available AMU Studio β.5 is still being verified. Verified compatible versions will be identified on the Release page.
+- **AI answers are drafts.** They do not constitute sign-off, a decision or a production record.
+- **Protection when the PC has been taken over is outside what this product covers.** If the PC is fully controlled with administrator rights, the protection of the transmission record and the keys may not work.
+- **AI usage fees are billed by the AI provider to the holder of the API key.**
+- The product itself is currently available for download at no charge. This may change in the future.
+- For details, see the [release notes for MACHI Guild v0.4.0-beta.1](https://github.com/wi-tcom/KOKOROAMU/releases/tag/machi-guild-v0.4.0-beta.1).
+
 ## Changes in this release
 
 - **Transmissions to an AI are now kept in a record that is not lost if the app or PC stops.** A transmission that was interrupted because the app or PC stopped, so that it is not known whether it arrived, is not sent again automatically, so that it is not sent twice. The next time you start, the number of such transmissions is shown at the top of the screen, and you can record what you found from the list (this only records the result; nothing is sent again). When the transmission record cannot be used, nothing is sent.
@@ -88,6 +107,7 @@ You can read about SAKU Repair Desk and AMU Evaluation Center on the overview pa
 - No open-source license applies to the contents of this repository or to the app. Copyright belongs to wi-t.com Inc. (`LICENSE.md`).
 - Licenses of bundled third-party software follow what is shown in the app.
 - The bundled sample Characters (1.2.0) are governed by `LicenseRef-WIT-Sample-1.0` (not OSS).
+- The Terms of Use, the Supplementary Terms for AI Products and Services, and the KOKOROAMU License Terms (Version 1.0) (LICENSE.md) apply to MACHI Guild (beta). The KOKOROAMU License Terms (Version 1.0) do not apply to AMU Studio β.5 (the AMU Studio Product-Specific Terms 1.0 continue to apply).
 
 ## Contact and reports
 
